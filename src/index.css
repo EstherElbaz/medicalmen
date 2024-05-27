@@ -11,3 +11,21 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.flexbox-Container {
+  height: 700px;
+  background-color: rgba(59, 59, 216, 0.674);
+
+  display: flex;
+  justify-content: center; 
+
+  justify-content: space-between;
+  justify-content: space-around;
+
+  
+    align-items: stretch;
+    align-items: start;
+
+    flex-wrap: wrap;
+}
+  

@@ -2,37 +2,58 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.loginContainer {
+  direction: rtl;
+  background-color: rgb(255, 255, 255);
+  max-width: 400px;
+  margin: auto;
+  padding: 50px 70px;
+}
+.form {
+  padding: 50px 70px;
+  border: 300px #235;
+  border-color: #235;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 50px;
+  border-radius: 20px;
+  padding: 10px 20px;
+  height: 2000px;
+  width: 2000px;
+  background-color: rgba(128, 128, 128, 0.326);
+
+}
+#password {
+  padding: 10px 10px;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 10px;
+  border-radius: 20px;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#userName {
+  padding: 10px 10px;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 0px;
+  border-radius: 20px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.btn {
+  border-radius: 30px;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: #5791ff;
+  border: none;
   color: white;
+  margin-top: 0px;
+  
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#newUser {
+  border-radius: 0px;
+  
 }
