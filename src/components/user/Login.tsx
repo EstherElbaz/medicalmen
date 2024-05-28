@@ -1,4 +1,6 @@
-import React, {useState } from "react";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+
 
 export default function Login() {
     const [userName, setUserName] = useState("");
@@ -14,16 +16,21 @@ export default function Login() {
         <div className="loginContainer form">
             <h2>שלום😊</h2>
             <div>
-                <input id="userName" placeholder="שם משתמש/אימייל" onChange={e => setUserName(e.target.value)}></input>
+                <input className="form-item" id="userName" placeholder="שם משתמש/אימייל" onChange={e => setUserName(e.target.value)}></input>
             </div>
             <div>
-            <input id="password" placeholder="סיסמה" type="password" onChange={e => setPassword(e.target.value)}></input>
+                <input className="form-item" id="password" placeholder="סיסמה" type="password" onChange={e => setPassword(e.target.value)}></input>
             </div>
             <div>
-            <button className="btn" onClick={checkUser}>התחבר</button>
+                <br></br>
+                <button className="btn" onClick={checkUser}>התחבר</button>
             </div>
-            <button id="newUser">משתמש חדש</button>
-
+            <div>
+                <br></br>
+                <Link to="/signup">
+                    <button className="btn" id="newUser">משתמש חדש? צור חשבון</button>
+                </Link>
+            </div >
         </div>
 
     );

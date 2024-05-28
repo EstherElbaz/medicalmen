@@ -10,6 +10,7 @@
   padding: 50px 70px;
 }
 .form {
+  text-align: center;
   padding: 50px 70px;
   border: 300px #235;
   border-color: #235;
@@ -18,10 +19,18 @@
   margin-top: 50px;
   border-radius: 20px;
   padding: 10px 20px;
-  height: 2000px;
-  width: 2000px;
+  height: 40%;
+  width: 60%;
   background-color: rgba(128, 128, 128, 0.326);
 
+}
+
+.form-item{
+  padding: 10px 10px;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 20px;
 }
 #password {
   padding: 10px 10px;
@@ -47,13 +56,8 @@
   font-size: 14px;
   font-weight: bold;
   background-color: #5791ff;
-  border: none;
   color: white;
   margin-top: 0px;
-  
-}
-
-#newUser {
-  border-radius: 0px;
+  border: none;
   
 }
