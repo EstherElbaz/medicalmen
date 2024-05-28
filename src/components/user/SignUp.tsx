@@ -2,7 +2,7 @@ import { useState } from "react";
 
 
 
-export default function SignUp (){
+export default function SignUp() {
 
     const [userName, setuserName] = useState<string>("");
     const [password, setPassword] = useState<string>("");
@@ -22,11 +22,10 @@ export default function SignUp (){
 
     return (
         <div>
-           <h1>הרשמה לאתר</h1> 
-           <div className="form">
-            <div className="mt-5 m-auto w-50">
+            <div className="form loginContainer">
                 <div id="register" >
-
+                    <h1>הרשמה לאתר</h1>
+                    <h5>בשביל הבריאות שלך, רק כמה פרטים קטנים</h5>
                     <input className="form-item" id="userName" type="email" placeholder="כתובת מייל" onChange={(e) => { { setuserName(e.target.value) } }}></input>
                     <br></br>
                     <input id="password" type={"password"} placeholder="סיסמה" onChange={(e) => { { setConfPassword(e.target.value) } }}></input>
@@ -40,7 +39,7 @@ export default function SignUp (){
                     <br></br>
                     <input className="form-item" id="idNum" placeholder="תעודת זהות" onChange={(e) => { { setIdNum(e.target.value) } }}></input>
                     <br></br>
-                    <select className="form-item" id="genderSelect" onChange={(event)=>setGenderId((event.currentTarget.value) )}>
+                    <select className="form-item" id="genderSelect" onChange={(event) => setGenderId((event.currentTarget.value))}>
                         <option value={1}>בן</option>
                         <option value={2}>בת</option>
                     </select>
@@ -51,15 +50,13 @@ export default function SignUp (){
                         </DemoContainer>
                     </LocalizationProvider>
                     <br></br> */}
-                  
-                    {/* <Select   value={genderId} options={options} onChange={handleChange} /> */}
-                  
-                    {/* <button onClick={register}>הרשמה</button> */}
 
+                    {/* <Select   value={genderId} options={options} onChange={handleChange} /> */}
+
+                    <button className="btn">הרשמה</button>
 
                 </div>
             </div>
-        </div>
         </div>
 
     )

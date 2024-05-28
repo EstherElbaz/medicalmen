@@ -13,7 +13,7 @@ export default function Login() {
     }
 
     return (
-        <div className="loginContainer form">
+        <div className="formContainer form">
             <h2>שלום😊</h2>
             <div>
                 <input className="form-item" id="userName" placeholder="שם משתמש/אימייל" onChange={e => setUserName(e.target.value)}></input>

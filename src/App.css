@@ -2,7 +2,8 @@
   text-align: center;
 }
 
-.loginContainer {
+.formContainer {
+  text-align: center;
   direction: rtl;
   background-color: rgb(255, 255, 255);
   max-width: 400px;
@@ -60,4 +61,11 @@
   margin-top: 0px;
   border: none;
   
+}
+
+.formContainer{
+  
+  /* display: inline-block; */
+
+
 }
