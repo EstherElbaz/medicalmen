@@ -60,9 +60,20 @@
   color: white;
   margin-top: 0px;
   border: none;
+  cursor: pointer; /* שינוי צורת העכבר */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* הנפשה */
   
 }
 
+.btn:hover {
+  background-color: #1e4ea7bb; /* שינוי צבע רקע */
+  transform: scale(1.05); /* שינוי קנה מידה */
+}
+.error-message {
+  color: red; /* צבע טקסט אדום */
+  font-weight: bold; /* טקסט מודגש */
+  margin-top: 10px; /* שוליים עליונים */
+}
 .formContainer{
   
   /* display: inline-block; */

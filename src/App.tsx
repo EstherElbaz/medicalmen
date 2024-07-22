@@ -1,15 +1,14 @@
-
 import './App.css';
-import Login from './components/user/Login';
-import RoutesMap from './routes';
+import React from 'react';
+import { UserProvider } from './context/UserContext';
+import RoutesMap from './routeMap';
 
-function App() {
-  document.title = "medicines";
-
-  return (
-    <RoutesMap></RoutesMap>
-
-  );
-}
+const App: React.FC = () => {
+    return (
+        <UserProvider>
+            <RoutesMap />
+        </UserProvider>
+    );
+};
 
 export default App;
