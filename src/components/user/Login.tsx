@@ -7,7 +7,7 @@ import { UserContext } from '../../context/UserContext';
 export default function Login() {
     const [userName, setUserName] = useState<string>("");
     const [password, setPassword] = useState<string>("");
-    const [error, setError] = useState<string | null>(null); 
+    const [error, setError] = useState<string | null>(null);
 
     const userContext = useContext(UserContext);
     const navigate = useNavigate();
@@ -21,8 +21,6 @@ export default function Login() {
     const checkUser = async () => {
         console.log(userName, password);
         setError(null);
-
-        // בצע קריאת GET ל-API לאימות המשתמש
         try {
             const response = await fetch(`https://localhost:7247/api/User?userName=${userName}&password=${password}`, {
                 method: 'GET',
@@ -41,12 +39,10 @@ export default function Login() {
             // שמור את פרטי המשתמש בקונטקסט
             setUser(userData);
 
-            // ניווט לדף ניהול או דף אחר לפי הצורך
             navigate('/dashboard');
         } catch (error) {
-            // טיפול בשגיאות
             console.error('שגיאה:', error);
-            setError('המשתמש לא נמצא או הסיסמה שגויה'); // הצגת הודעת שגיאה
+            setError('המשתמש לא נמצא או הסיסמה שגויה');  
         }
     };
 
