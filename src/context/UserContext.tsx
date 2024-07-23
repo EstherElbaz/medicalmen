@@ -2,9 +2,14 @@
 import React, { createContext, useState, ReactNode, FC } from 'react';
 
 interface User {
-    name: string;
-    email: string;
-    // ניתן להוסיף שדות נוספים בהתאם לצורך
+    id: number;
+    emailAddress: string;
+    password: string;
+    firstName: string;
+    lastName: string;
+    birthDate: Date;
+    genderId: number;
+    identityNumber: string;
 }
 
 interface UserContextType {

@@ -14,11 +14,11 @@ const Dashboard: React.FC = () => {
 
     return (
         <div className="dashboard">
-            <h1>Welcome to your Dashboard!</h1>
+            <h1>שלום {user?.firstName}</h1>
             {user ? (
                 <div>
-                    <h2>Hello, {user.name}!</h2>
-                    <p>Email: {user.email}</p>
+                    <h2>Hello, {user.firstName}!</h2>
+                    <p>Email: {user.emailAddress}</p>
                 </div>
             ) : (
                 <p>Loading user information...</p>

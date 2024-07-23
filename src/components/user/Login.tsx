@@ -1,5 +1,3 @@
-
-
 import React, { useState, useContext } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { UserContext } from '../../context/UserContext';
@@ -35,6 +33,7 @@ export default function Login() {
             }
 
             const userData = await response.json();
+            console.log(userData);
 
             // שמור את פרטי המשתמש בקונטקסט
             setUser(userData);

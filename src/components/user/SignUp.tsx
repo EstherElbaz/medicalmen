@@ -12,13 +12,17 @@ export default function SignUp() {
     const [idNum, setIdNum] = useState<string>("");
     const [birthDate, setBirthDate] = useState<any>(new Date);
     const [genderId, setGenderId] = useState<any>(2);
+    const [error, setError] = useState<string | null>(null);
 
     const options = [
         { value: 1, label: "בן" },
         { value: 2, label: "בת" },
     ];
 
-
+    const register = async () => {
+        setError(null)
+        newUser = 
+    }
 
     return (
         <div>
@@ -53,7 +57,7 @@ export default function SignUp() {
 
                     {/* <Select   value={genderId} options={options} onChange={handleChange} /> */}
 
-                    <button className="btn">הרשמה</button>
+                    <button className="btn" onClick={register}>הרשמה</button>
 
                 </div>
             </div>
