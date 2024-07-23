@@ -41,7 +41,7 @@ export default function Login() {
             navigate('/dashboard');
         } catch (error) {
             console.error('שגיאה:', error);
-            setError('המשתמש לא נמצא או הסיסמה שגויה');  
+            setError('אופס... משהו לא עובד טוב. נסה שוב');  
         }
     };
 

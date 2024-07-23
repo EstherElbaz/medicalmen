@@ -23,8 +23,10 @@ const Dashboard: React.FC = () => {
             ) : (
                 <p>Loading user information...</p>
             )}
+
+
             <Link to="/">
-                <button className="btn">Log out</button>
+                <button className="btn">התנתק</button>
             </Link>
         </div>
     );
